@@ -1,38 +1,79 @@
-.App {
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bg-container{
+  background-image: url("https://res.cloudinary.com/dkfefpnio/image/upload/v1667745673/guillaume-galtier-3YrppYQPoCI-unsplash_xhmpcs.jpg");
+  background-size: cover;
+  height:100vh;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container{
+  background-color: beige;
+  width:250px;
+  padding:10px;
+  border-radius: 9px;
+  border: 0px;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input{
+  border: 0px;
+  outline: none;
+  background-color: transparent;
+}
+
+.weather-container{
+  background-image: linear-gradient(#9A7787,#E4AFB0,#FED7BF);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  padding:30px;
+  margin-top:20px;
+  border-radius: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading{
+  font-size: 28px;
+  color: whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.country{
+  font-size: 12px;
+  background: orange;
+  color:white;
+  border-radius:10px;
+  padding:6px;
+  margin-left: 6px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text{
+  font-size: 24px;
+  color: #9A7787;
 }
 
-.App-link {
-  color: #61dafb;
+.temp{
+  color: aquamarine;
+  margin-top:10px ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+  background-color: coral;
+  align-self: flex-end;
+  border-width: 0px;
+  color:white;
+  padding:5px;
+  border-radius: 4px;
 }
